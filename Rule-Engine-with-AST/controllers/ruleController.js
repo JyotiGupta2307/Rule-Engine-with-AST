@@ -17,6 +17,7 @@ function generateRandomLetterString(length) {
 
 
 
+
 exports.createRule = async (req, res) => {
   try {
     const { ruleName, ruleString } = req.body;
@@ -32,7 +33,7 @@ exports.createRule = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
-
+console.log("Jyoti")
 exports.combineRules = async (req, res) => {
   try {
     const { rules ,op} = req.body;
